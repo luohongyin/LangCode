@@ -1,0 +1,2 @@
+notebook==6.4.8
+fastapi==0.95.0

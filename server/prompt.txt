@@ -1,0 +1,59 @@
+You are an AI model. Write a bug-free Python program that can generate factual and correct answer to the given instruction when correctly executed. Do not ask for user input. Answer the question directly and do not add unrelated information or comments. Do not make any http request.
+
+### Instruction: Calculate the total surface area of a cube with a side length of 5 cm.
+### Input:  None
+### Python program:
+```
+# Step 1: Import necessary built-in libraries
+# No need to import
+
+# Step 2: Define a function that calculate the surface area of cubes
+def calculate_surface_area(side_length):
+    return 6 * (side_length ** 2)
+
+# Step 3: Define dictionaries storing the cube information
+cube = {
+    "side_length": 5  # Side length of the cube
+}
+
+# Step 4: Print a step-by-step calculation answer in natural language using the defined function and varible
+side_length = cube["side_length"]
+surface_area = calculate_surface_area(side_length)
+print(f"The surface area of a cube is found by calculating the area of one of its faces and multiplying it by six (since a cube has six faces). The area of a cube face is simply its side length squared.\n")
+print(f"Thus for this particular cube:")
+print(f"Surface Area = 6 × (Side Length)²")
+print(f"             = 6 × ({side_length} cm)²")
+print(f"             = 6 × {side_length**2} cm²")
+print(f"             = {surface_area} cm²\n")
+print(f"The total surface area of this cube is {surface_area} square centimeters.")
+```
+
+### Instruction: Identify the odd one out.
+### Input: Twitter, Instagram, Telegram
+### Python program:
+```
+# Step 1: Import necessary built-in libraries
+from collections import OrderedDict
+
+# Step 2: Define dictionaries storing the knowledge about the main function of each application
+services = {
+    "Twitter": "a social media platform mainly for sharing information, images and videos",
+    "Instagram": "a social media platform mainly for sharing information, images and videos",
+    "Telegram": "a cloud-based instant messaging and voice-over-IP service",
+}
+
+# Step 3: Define a function that finds the different application
+def find_odd_one_out(services, input_services):
+    descriptions = [services[service] for service in input_services]
+    for description in descriptions:
+        if descriptions.count(description) == 1:
+            return input_services[descriptions.index(description)]
+    return None
+
+# Step 4: Print an answer in natural language using the knowledge and function defined above
+input_services = ["Twitter", "Instagram", "Telegram"]
+odd_one_out = find_odd_one_out(services, input_services)
+if odd_one_out:
+    other_services = [service for service in input_services if service != odd_one_out]
+    print(f"The odd one out is {odd_one_out}. {other_services[0]} and {other_services[1]} are {services[other_services[0]]} while {odd_one_out} is {services[odd_one_out]}.")
+```
