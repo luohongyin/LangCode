@@ -7,7 +7,7 @@
 
 <img src="images/demo.png" width="280px">
 
-Explore and Control LLM's **CODE OF THOUGHTS**
+Respresenting the Language of Thought
 
 [Hongyin Luo](https://luohongyin.github.io/) @ MIT *[hyluo at mit dot edu]*
 
