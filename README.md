@@ -1,5 +1,5 @@
 # LangCode - Enable NLEP Reasoning for LLMs
-- Implementation and iPython toolkit for the paper [Natural Language Embedded Programs for Hybrid Language Symbolic Reasoning](#).
+- Implementation and iPython toolkit for the paper [Natural Language Embedded Programs for Hybrid Language Symbolic Reasoning](https://arxiv.org/pdf/2309.10814.pdf).
 - Improved interpretability and problem solving ability with **natural language embedded programs (NLEP)**, a hybrid language-symbolic reasoning technique.
 - Multi-round, interactive, smooth programming on Colab and Jupyter notebook.
 
